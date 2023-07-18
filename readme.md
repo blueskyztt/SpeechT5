@@ -1,11 +1,30 @@
 # SpeechT5
 
-[SpeechT5](https://arxiv.org/abs/2110.07205) is a framework exploring encoder-decoder pre-training for self-supervised speech/text representation learning.
+[SpeechT5](https://arxiv.org/abs/2110.07205) is a framework exploring encoder-decoder pre-training for self-supervised
+speech/text representation learning.
 Researchers from Microsoft Asia Research Institute and Microsoft Cloud Computing Platform Azure Speech Group
 successively proposed SpeechT5. Unlike most other models, we can use SpeechT5 to perform multiple tasks.
 SpeechT5 can implement speech-to-text, text-to-speech, and speech-to-speech.
 Speech-to-speech is used to convert between different voices or to perform speech enhancement.
 The model we will deploy speecht5_tts can only convert English input text into speech.
+
+## 1. Create a new Notebook Server
+
+Create a new Notebook Server on the Kubeflow on vSphere platform.
+
+- You can create your own custom image or use an image published by us here:
+
+  `projects.registry.vmware.com/models/notebook/hf-inference-deploy@sha256:8c5960ce436881f37336b12556d7a661ea20e4dbfe9ac193516cf384daa51c19`
+
+- set 2 CPUs, 4GB memory for this Notebook Server.
+
+## 2. Connect to the Notebook Server
+
+Open a Terminal window. Pull the code of this project by running
+
+`git clone https://github.com/blueskyztt/SpeechT5.git`
+
+
 
 ## 3. Download model
 
@@ -101,7 +120,7 @@ bash ./start_ts.sh
 Request the service in the terminal, execute
 
 ```shell
-python ./lr_client.py
+python ./client.py
 ```
 
 When you see 'Successfully generated output_client.wav', indicating that the requested service is successful. In the

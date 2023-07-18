@@ -7,7 +7,7 @@ import requests
 
 import soundfile as sf
 
-url = "http://localhost:8080/predictions/SpeechT5-temp"
+url = "http://localhost:8080/predictions/SpeechT5"
 data = "Today is Monday. Today is sunny, no wind, and the temperature is mild."
 
 data = json.dumps(data)

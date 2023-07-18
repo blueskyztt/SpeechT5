@@ -13,7 +13,7 @@ from ts.torch_handler.base_handler import BaseHandler
 logger = logging.getLogger(__name__)
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
-class fastspeech2Handler(BaseHandler):
+class speecht5Handler(BaseHandler):
     def __init__(self):
         super().__init__()
 

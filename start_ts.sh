@@ -1,7 +1,7 @@
 set -x
 set -euo pipefail
 
-model_name="SpeechT5-temp"
+model_name="SpeechT5"
 
 export JAVA_HOME=$(echo ${JAVA_HOME})
 
